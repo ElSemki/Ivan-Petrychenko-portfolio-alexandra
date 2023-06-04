@@ -1,0 +1,24 @@
+.subtitle {
+  position: relative;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ffa501;
+  }
+
+  &--about-me {
+    &::before {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
