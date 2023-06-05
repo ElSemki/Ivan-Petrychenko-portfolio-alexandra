@@ -1,0 +1,121 @@
+.resume {
+  padding-top: 120px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 85px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    align-items: start;
+    column-gap: 135px;
+    width: 985px;
+    margin: 0 auto;
+  }
+
+  &__list-wrapper {
+    position: relative;
+    padding-left: 50px;
+  }
+
+  &__list-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    list-style: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-color: $main-color;
+      border-radius: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 7px;
+      width: 1px;
+      min-height: calc(100% - 40px);
+      background-color: #000000;
+    }
+  }
+
+  &__item {
+    position: relative;
+    @include before-circle;
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 17px;
+      left: -42px;
+      width: 42px;
+      height: 1px;
+      background-color: #000000;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__item-header {
+    margin-bottom: 12px;
+    padding-left: 56px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 25px;
+      height: 25px;
+    }
+
+    &--university::after {
+      background: url('../icons/experience/university.svg') no-repeat;
+    }
+
+    &--courses::after {
+      background: url('../icons/experience/courses.svg') no-repeat;
+    }
+
+    &--developer::after {
+      background: url('../icons/experience/developer.svg') no-repeat;
+    }
+
+    &--designer::after {
+      background: url('../icons/experience/designer.svg') no-repeat;
+    }
+  }
+
+  &__item-caption {
+    font-weight: 700;
+  }
+
+  &__item-desc,
+  &__item-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

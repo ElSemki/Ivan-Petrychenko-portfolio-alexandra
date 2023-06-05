@@ -21,4 +21,10 @@
       transform: translateX(0);
     }
   }
+
+  &--center {
+    &::before {
+      bottom: -25px;
+    }
+  }
 }

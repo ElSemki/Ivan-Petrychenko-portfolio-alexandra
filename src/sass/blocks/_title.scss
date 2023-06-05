@@ -1,0 +1,18 @@
+.title {
+  position: relative;
+  padding-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 2;
+  @include before-circle;
+
+  &--center {
+    padding: 0;
+    &::before {
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
