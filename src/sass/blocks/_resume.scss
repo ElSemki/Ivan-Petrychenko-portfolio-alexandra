@@ -1,13 +1,8 @@
 .resume {
   padding-top: 120px;
 
-  &__title {
-    text-align: center;
-  }
-
   &__subtitle {
     margin-bottom: 85px;
-    text-align: center;
   }
 
   &__wrapper {
@@ -117,5 +112,9 @@
   &__item-text {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  &__item-text {
+    margin-bottom: 0;
   }
 }

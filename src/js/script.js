@@ -52,4 +52,15 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
   promoLinks();
+
+  function progressBar() {
+    const scaleBar = document.querySelectorAll('.skills__progress-scale');
+    const scalePercent = document.querySelectorAll('.skills__progress-percent');
+
+    scaleBar.forEach((bar, i) => {
+      bar.style.width = scalePercent[i].innerHTML;
+    });
+  }
+
+  progressBar();
 });
