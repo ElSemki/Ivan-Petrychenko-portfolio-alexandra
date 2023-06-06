@@ -3,6 +3,7 @@
 
   &__title {
     position: relative;
+    margin-bottom: 85px;
     &::after {
       content: '';
       position: absolute;
@@ -18,7 +19,6 @@
   &__wrapper {
     width: 1040px;
     margin: 0 auto;
-    padding-top: 85px;
   }
 
   &__list {
@@ -45,18 +45,19 @@
   }
 
   &__info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     margin-bottom: 5px;
   }
 
   &__name {
-    max-width: 210px;
     font-weight: 700;
   }
 
   &__price {
+    justify-self: end;
     font-weight: 700;
+    text-align: end;
   }
 
   &__desc {
