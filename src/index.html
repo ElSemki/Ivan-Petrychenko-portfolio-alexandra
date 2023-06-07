@@ -576,19 +576,25 @@
           <div class="contacts__form-text">Или оставьте ваши данные и я сама вам напишу:</div>
           <form action="#" class="contacts__form">
             <div class="contacts__input">
-              <input id="name" type="text" placeholder="Иван">
+              <input id="name" type="text" placeholder="Иван" required>
               <label for="name">Ваше имя</label>
             </div>
             <div class="contacts__input">
-              <input id="email" type="email">
+              <input id="email" type="email" required>
               <label for="email">Ваша почта</label>
             </div>
             <div class="contacts__textarea">
               <textarea name="text" id="text"></textarea>
               <label for="text">Ваше сообщение</label>
             </div>
-            <div class="contacts__btn-wrapper">
+            <div class="contacts__form-triggers">
               <button class="contacts__form-btn">Отправить сообщение</button>
+              <div class="contacts__policy">
+                <input type="checkbox" class="contacts__policy-checkbox" required>
+                <span class="contacts__policy-text">Я согласен(а) с
+                  <a href="policy.html" class="contacts__policy-link">политикой конфиденциальности</a>
+                </span>
+              </div>
             </div>
           </form>
         </div>

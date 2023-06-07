@@ -1,0 +1,163 @@
+@media (max-width: 1350px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .about-me {
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 245px);
+      column-gap: 30px;
+    }
+
+    &__item {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .promo {
+    &__info-block {
+      width: 450px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .about-me {
+    &__wrapper {
+      grid-template-columns: 330px 350px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+    }
+
+    &__item {
+      padding-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .promo {
+    &__info-block {
+      width: 375px;
+    }
+
+    &__title {
+      font-size: 37px;
+      line-height: 50px;
+    }
+  }
+
+  .about-me {
+    padding-top: 40px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+    }
+
+    &__img-wrapper {
+      height: 400px;
+      margin-bottom: 46px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 250px);
+      column-gap: 30px;
+    }
+
+    &__item {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+
+  .promo {
+    background: url('../img/main_bg.jpg') 58% / cover no-repeat;
+
+    .hamburger {
+      right: 20px;
+    }
+
+    &__info-block {
+      width: 300px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 27px;
+      line-height: 39px;
+    }
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 36px;
+
+    &--about-me {
+      &::before {
+        bottom: -15px;
+      }
+    }
+  }
+
+  .about-me {
+    &__subtitle {
+      margin-bottom: 35px;
+    }
+
+    &__img-wrapper {
+      height: 340px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      padding-left: 60px;
+    }
+  }
+}

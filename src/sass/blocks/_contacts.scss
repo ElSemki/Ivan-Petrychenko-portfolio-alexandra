@@ -110,6 +110,28 @@
     }
   }
 
+  &__form-triggers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column: 1/-1;
+    column-gap: 35px;
+  }
+
+  &__policy {
+    display: flex;
+    align-items: center;
+  }
+
+  &__policy-checkbox {
+    margin-right: 10px;
+  }
+
+  &__policy-text,
+  &__policy-link {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   &__form-btn {
     display: block;
     height: 100%;

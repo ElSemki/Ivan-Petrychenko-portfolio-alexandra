@@ -6,6 +6,7 @@
 
   &__info-block {
     width: 532px;
+    padding-top: 7px;
     transition: all 0.6s;
     &.active {
       transform: translateX(35%);
