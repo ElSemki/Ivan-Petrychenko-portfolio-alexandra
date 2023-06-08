@@ -24,6 +24,25 @@
       padding-left: 50px;
     }
   }
+
+  .resume {
+    &__wrapper {
+      justify-content: space-between;
+      column-gap: 0;
+      width: auto;
+      margin: 0;
+      padding-left: 35px;
+    }
+  }
+
+  .skills {
+    &__technology-cards,
+    &__progress-list {
+      grid-template-columns: repeat(3, 270px);
+      justify-content: space-evenly;
+      column-gap: 0;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -58,6 +77,22 @@
 
     &__item {
       padding-left: 60px;
+    }
+  }
+
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2, 330px);
+      padding-left: 0;
+    }
+  }
+
+  .skills {
+    &__technology-cards,
+    &__progress-list {
+      grid-template-columns: repeat(2, 270px);
+      justify-content: space-evenly;
+      row-gap: 40px;
     }
   }
 }
@@ -99,6 +134,48 @@
       padding-left: 50px;
     }
   }
+
+  .resume {
+    padding-top: 40px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__subtitle {
+      margin-bottom: 55px;
+    }
+
+    &__wrapper {
+      grid-template-columns: 1fr;
+      justify-content: stretch;
+    }
+
+    &__list-wrapper:first-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .skills {
+    padding-top: 45px;
+
+    &__subtitle {
+      margin-bottom: 55px;
+    }
+
+    &__technology-cards {
+      grid-template-columns: repeat(2, 250px);
+      margin-bottom: 60px;
+    }
+
+    &__progress-list {
+      grid-template-columns: repeat(2, 230px);
+    }
+
+    &__progress-desc {
+      grid-template-columns: 180px 35px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -136,10 +213,8 @@
     font-size: 24px;
     line-height: 36px;
 
-    &--about-me {
-      &::before {
-        bottom: -15px;
-      }
+    &::before {
+      bottom: -15px;
     }
   }
 
@@ -158,6 +233,29 @@
 
     &__item {
       padding-left: 60px;
+    }
+  }
+
+  .skills {
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__subtitle {
+      margin-bottom: 35px;
+    }
+
+    &__technology-cards {
+      grid-template-columns: 270px;
+      row-gap: 20px;
+    }
+
+    &__progress-list {
+      grid-template-columns: 300px;
+    }
+
+    &__progress-desc {
+      grid-template-columns: 200px 35px;
     }
   }
 }
